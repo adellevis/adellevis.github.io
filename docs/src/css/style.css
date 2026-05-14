@@ -13852,6 +13852,14 @@ textarea.form-control-lg {
   color: #D8E0E1;
 }
 
+.visible {
+  border: 1px dotted red;
+}
+
+.tan {
+  background-color: #F8F2EA;
+}
+
 body {
   font-size: calc(16px + 0.4vw);
   color: hsl(0, 0%, 40%);
@@ -13887,6 +13895,14 @@ h2, .h2 {
 
 h1, .h1 {
   font-size: calc((16px + 0.4vw) * 1.1 * 1.2 * 1.2 * 1.5 * 1.2);
+}
+
+a:link, a:visited {
+  color: #9A2CAB;
+  text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
 }
 
 button.primary {
@@ -13945,6 +13961,7 @@ nav i {
   left: 0;
   width: 100%;
   z-index: 1030;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .scrolled-down {
@@ -13955,7 +13972,6 @@ nav i {
 .scrolled-up {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
-  background-color: white;
 }
 
 #logo {
@@ -14010,7 +14026,7 @@ nav i {
 
 .hero-testimonial .testimonial-content {
   font-size: 16px;
-  border-left: 6px solid #d7e9e4;
+  border-left: 4px solid #96c5b8;
   padding: 0.5em 0 0.5em 1em;
   margin-top: 1em;
 }
@@ -14056,6 +14072,14 @@ video.intro-vid {
   box-shadow: 0px 0px 15px 16px hsla(0, 0%, 60%, 0.25);
 }
 
+.stat {
+  font-size: 60px;
+  font-family: "Domaine Display Narrow";
+  font-weight: 600;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 footer {
   font-size: 12px;
   text-transform: uppercase;
@@ -14075,7 +14099,6 @@ footer {
 
 .responsive-indicator {
   z-index: 1000;
-  display: none;
   background-color: red;
   font-family: monospace;
   position: fixed;

@@ -19,6 +19,8 @@ $nav-color: white;
 .grey {background-color: $grey-1;}
 .primary-text {color: $purple;}
 .grey-text {color: $grey-1;}
+.visible {border: 1px dotted red;}
+.tan {background-color: $tan;}
 
 // @import "font-awesome";
 body {
@@ -29,6 +31,7 @@ body {
 }
 
 $font_headline: "Domaine Display Narrow";
+
 
 h1, h2, h3, h4, h5, h6 {
 	// font-family: "DomaineDisplayNarrow", serif;
@@ -50,6 +53,14 @@ h4 {font-size: $h4};
 h3 {font-size: $h3};
 h2 {font-size: $h2};
 h1 {font-size: $h1};
+
+a:link, a:visited {
+	color: $cta;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
 
 button.primary {
 	background-color: $cta;
@@ -117,13 +128,14 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1030;
+  background-color: rgba($nav-color,0.85);
 }
 .scrolled-down {
 	transform:translateY(-100%); transition: all 0.3s ease-in-out;
 }
 .scrolled-up {
 	transform:translateY(0); transition: all 0.3s ease-in-out;
-	background-color: $nav-color;
+	// background-color: $nav-color;
 }
 
 #logo {
@@ -180,7 +192,7 @@ nav {
 	// @extend .viz;
 	.testimonial-content {
 		font-size: 16px;
-		border-left: 6px solid lighten($primary,5%);
+		border-left: 4px solid darken($primary,15%);
 		padding: 0.5em 0 0.5em 1em;
 		margin-top: 1em;
 	}
@@ -197,7 +209,6 @@ nav {
 	@media only screen and (min-width : $break-lg) {
 		padding-top: 1em;
 	}
-
 }
 
 video.intro-vid {
@@ -231,6 +242,15 @@ video.intro-vid {
 	}
 }
 
+.stat {
+	font-size: 60px;
+	font-family: $font_headline;
+	font-weight: 600;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	// border: 1px dotted red;
+}
+
 footer {
 	font-size: 12px;
   text-transform: uppercase;
@@ -251,7 +271,7 @@ footer {
 
 .responsive-indicator {
   z-index: 1000;
-  display: none;
+  // display: none;
   background-color: red;
   font-family: monospace;
   position: fixed;
