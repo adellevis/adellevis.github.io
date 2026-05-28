@@ -114,14 +114,14 @@ button.secondary {
 
 nav {
 	font-size: calc(24px + 0.5vw);
-	font-weight: 700;
+	// font-weight: 700;
 	z-index: 2;
 	// background-color: white;
 	// background-color: $nav-color;
 	background-color: hsla(0, 0%, 90%, 0);
 	font-family: $font_headline;
 	a:link, a:visited {
-		font-weight: 600;
+		// font-weight: 600;
 		color: $near_black;
 	}	
 	i {
@@ -182,7 +182,7 @@ nav {
 	h2 {
 		font-size: calc(20px + 0.5vw);
 		letter-spacing: 0.0125em;
-		font-weight: 500;
+		// font-weight: 500;
 	}
 }
 
