@@ -14032,8 +14032,9 @@ nav i {
   color: #1a0a05;
 }
 #hero h1, #hero .h1 {
-  font-size: calc(22px + 1.5vw);
+  font-size: calc(40px + 0.6vw);
   line-height: 1.05em;
+  color: rgb(117.4697674419, 33.5627906977, 130.4372093023);
 }
 #hero h2, #hero .h2 {
   font-size: calc(20px + 0.5vw);

@@ -26,6 +26,7 @@ $nav-color: white;
 
 // @import "font-awesome";
 $font_headline: "Domaine Display Narrow";
+// $font_headline: "Comic Sans";
 $font_body: "EB Garamond", Georgia, "Times New Roman", Times, serif;
 
 body {
@@ -172,8 +173,10 @@ nav {
 		color: $near_black;
 	}
 	h1 {
-		font-size: calc(22px + 1.5vw);
+		// font-size: clamp(40px, calc(22px + 1.5vw), 60px);
+		font-size: calc(40px + 0.6vw);
 		line-height: 1.05em;
+		color: darken($purple,10%);
 	}
 	h2 {
 		font-size: calc(20px + 0.5vw);
