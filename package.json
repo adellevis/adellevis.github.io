@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve & npx sass sass:docs/src/css --watch",
-    "watch:sass": "npx sass sass:docs/css --watch"
+    "watch:sass": "npx sass sass:docs/src/css --watch",
+    "build": "npx @11ty/eleventy && npx sass sass:docs/src/css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0"
+  }
 }

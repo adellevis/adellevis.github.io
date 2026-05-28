@@ -1,16 +1,17 @@
-module.exports = function(eleventyConfig) {
-  // eleventyConfig.addPassthroughCopy("style.css");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
-  // photos
-  // eleventyConfig.addPassthroughCopy("photos");
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src");
-  // eleventyConfig.addCollection("photos", function (collection) {
-  //   return collection.getFilteredByGlob("photos/*.jpg"); // Adjust the glob pattern as needed
-  // });
+
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://adelle.ink",
+    },
+  });
+
   return {
     dir: {
       output: "docs"
     }
   }
-
 };

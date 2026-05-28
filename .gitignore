@@ -1,1 +1,9 @@
 .DS_Store
+node_modules/
+package-lock.json
+.cache/
+.eleventy-cache/
+*.log
+.env
+.env.local
+.claude/settings.local.json

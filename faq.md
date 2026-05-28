@@ -1,5 +1,7 @@
 ---
 title: Frequently Asked Questions
+seoTitle: "FAQ · Live Wedding Painter NJ · Adelle Marcero"
+description: "Everything you need to know about booking Adelle Marcero for live event painting at your wedding or event in New Jersey, Philadelphia, or New York."
 layout: basic-page.html
 ---
 

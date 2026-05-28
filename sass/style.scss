@@ -1,6 +1,7 @@
 @import "bootstrap.scss";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+
 $fontsize-body: calc(16px + 0.4vw);
 // $fontsize-body: 16px;
 
@@ -11,6 +12,7 @@ $tan: #F8F2EA;
 $cta: #9A2CAB;
 
 $purple: #9A2CAB;
+$near_black: #1a0a05;
 
 $nav-color: $tan;
 $nav-color: white;
@@ -23,21 +25,23 @@ $nav-color: white;
 .tan {background-color: $tan;}
 
 // @import "font-awesome";
+$font_headline: "Domaine Display Narrow";
+$font_body: "EB Garamond", Georgia, "Times New Roman", Times, serif;
+
 body {
 	font-size: $fontsize-body;
+	font-family: $font_body;
 	color: hsla(0, 0%, 40%, 1);
 	color: #321414;
 	color: #3d0c02;
 }
-
-$font_headline: "Domaine Display Narrow";
 
 
 h1, h2, h3, h4, h5, h6 {
 	// font-family: "DomaineDisplayNarrow", serif;
 	font-family: "Domaine Display Narrow", serif;
   font-weight: 600;
-  color: black;
+  color: $near_black;
 }
 
 $h6: $fontsize-body;
@@ -62,7 +66,8 @@ a:link, a:visited {
 	}
 }
 
-button.primary {
+button.primary,
+a.btn.primary {
 	background-color: $cta;
 	font-weight: 600;
 	border: 0;
@@ -71,8 +76,14 @@ button.primary {
 		color: white;
 		text-decoration: none;
 	}
+	&:link, &:visited {
+		color: white;
+		text-decoration: none;
+	}
 	&:hover {
 		background-color: darken($cta,10%);
+		color: white;
+		text-decoration: none;
 	}
 }
 
@@ -87,11 +98,11 @@ button.secondary {
 	font-weight: 600;
 	// border: 1px dotted red;
 	border:0;
-	color: black;
+	color: $near_black;
 	padding: 0.25em 0.5em;
 	border-radius: 5px;
 	a {
-		color: black;
+		color: $near_black;
 		text-decoration: none;
 	}
 	&:hover {
@@ -110,7 +121,7 @@ nav {
 	font-family: $font_headline;
 	a:link, a:visited {
 		font-weight: 600;
-		color: black;
+		color: $near_black;
 	}	
 	i {
 		font-size: 50px;
@@ -154,16 +165,15 @@ nav {
 	top: -100px;
 	.superheader {
 		font-weight: 800;
-		margin-bottom: 0;
 		margin-bottom: 13px;
 		text-transform: uppercase;
-		font-size: calc(18px + 0.5vw);
+		font-size: calc(12px + 0.2vw);
 		letter-spacing: 2px;
-		color: darken($primary,30%);
+		color: $near_black;
 	}
 	h1 {
-		font-size: calc(40px + 4vw);
-		line-height: 1em;
+		font-size: calc(22px + 1.5vw);
+		line-height: 1.05em;
 	}
 	h2 {
 		font-size: calc(20px + 0.5vw);
@@ -205,7 +215,7 @@ nav {
 }
 
 .container-form {
-	height:85vh;
+	min-height: 85vh;
 	@media only screen and (min-width : $break-lg) {
 		padding-top: 1em;
 	}
@@ -246,7 +256,8 @@ video.intro-vid {
 	font-size: 60px;
 	font-family: $font_headline;
 	font-weight: 600;
-	margin-bottom: 0 !important;
+	line-height: 1;
+	margin-bottom: 0.25rem !important;
 	padding-bottom: 0 !important;
 	// border: 1px dotted red;
 }
@@ -280,7 +291,7 @@ footer {
   font-size: 16px;
   padding: 3px 8px;
   a:link, a:visited {
-      color: black;
+      color: $near_black;
       text-decoration: underline;
   }
 }
