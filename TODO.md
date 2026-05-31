@@ -19,4 +19,4 @@ These were left over after the SEO/UX/analytics commit on `main`. None block the
 
 ## Stats (waiting on Adelle)
 
-- [ ] Confirm the "3,408 paintings created" and "50+ venues worked with" numbers are accurate. Years-of-experience auto-updates via `data-years-since="2013"`.
+- [ ] Confirm the "50+ venues worked with" number is accurate. Paintings count was updated from 3,408 → 500+ on 2026-05-30. Years-of-experience auto-updates via `data-years-since="2013"`.
